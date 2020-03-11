@@ -3,9 +3,10 @@ import Navbar from './Components/Navbar';
 import FormField from './Components/FormField';
 import CoolButton from './Components/CoolButton';
 import Signup from './Components/Signup';
+import Message from './Components/Message';
 
 class App extends Component {
-    constructor(props) {
+    constructor() {
         super();
         this.modes = {
             isActive: "is-active",
@@ -54,6 +55,10 @@ class App extends Component {
                 </div>
 
                 <Signup />
+
+                <Message isInfo title="Hello World">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>.
+                </Message>
             </div>
         )
     }
